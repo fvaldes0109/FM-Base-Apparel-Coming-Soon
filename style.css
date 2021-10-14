@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Josefin-Sans;
+    src: url('./fonts/Josefin-Sans/JosefinSans-VariableFont_wght.ttf');
+}
+
+h1, p {
+    font-family: Josefin-Sans;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    padding: 60px 10%;
+}
+
+h1 {
+    margin: 120px 0 20px;
+    font-size: 50px;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 10px;
+    line-height: 1.1;
+}
+
+strong {
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+p {
+    color:hsl(0, 36%, 70%);
+    line-height: 1.5;
+}
+
+#mail-field {
+    position: relative;
+}
+
+input {
+    width: 72%;
+    margin: 30px 0 10px;
+    height: 40px;
+    padding: 5px 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid hsl(0, 36%, 80%);
+    border-right: 0px;
+}
+
+::placeholder {
+    color:hsl(0, 36%, 70%);
+}
+
+#icon {
+    position: absolute;
+    right: 120px;
+    top: 44px;
+    visibility: hidden;
+}
+
+#button-filter, button {
+    height: 52px;
+    width: 90px;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#button-filter {
+    background: rgb(100, 100, 100);
+    visibility: hidden;
+    top: 0px;
+    right: 0px;
+}
+
+button {
+    border: 0;
+    background: -o-linear-gradient(top left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: -moz-linear-gradient(top left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: -webkit-linear-gradient(top left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    top: 30px;
+    right: 18px;
+    height: 52px;
+    box-shadow: rgba(200, 200, 200, 0.6) 5px 5px 10px 5px;
+}
+ 
+button:active #button-filter {
+    visibility: visible;
+    background: -o-linear-gradient(top left, hsla(0, 0%, 100%, 0.7), hsla(0, 100%, 98%, 0.7));
+    background: -moz-linear-gradient(top left, hsla(0, 0%, 100%, 0.7), hsla(0, 100%, 98%, 0.7));
+    background: -webkit-linear-gradient(top left, hsla(0, 0%, 100%, 0.7), hsla(0, 100%, 98%, 0.7));
+}
+
+#invalid-text {
+    color: hsl(0, 93%, 68%);
+    padding: 0 20px;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+@media(min-width: 1300px) {
+    input {
+        width: 80%;
+    }
+}

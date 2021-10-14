@@ -13,6 +13,7 @@
 
         <title>Frontend Mentor | Base Apparel coming soon page</title>
 
+		<link rel="stylesheet" href="style.css">
         <style>
             .attribution {
                 font-size: 11px;
@@ -34,10 +35,13 @@
 					<form name="info">
 						<div id="mail-field">
 							<input type="email" placeholder="Email Address" />
+                            <img id="icon" alt="Warn icon" src="./images/icon-error.svg" />
 							<button type="button">
 								<img alt="arrow" src="./images/icon-arrow.svg" />
+								<div id="button-filter"></div>
 							</button>
 						</div>
+                        <p id="invalid-text">Please provide a valid email</p>
 					</form>
 			</section>
 			<aside>
@@ -47,19 +51,5 @@
 				</picture>
 			</aside>
 		</main>
-        <footer>
-            <p class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by
-                <a
-                    href="https://www.linkedin.com/in/fernando-vald%C3%A9s-garc%C3%ADa-a46142221/"
-                    >Fernando Valdés García</a
-                >.
-            </p>
-        </footer>
     </body>
 </html>
