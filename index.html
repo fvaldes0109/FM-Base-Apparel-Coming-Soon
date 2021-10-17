@@ -23,6 +23,7 @@
                 color: hsl(228, 45%, 44%);
             }
         </style>
+		<script src="./validate.js"></script>
     </head>
     <body>
 		<main>
@@ -34,9 +35,9 @@
 					announcements and our launch deals.</p>
 					<form name="info">
 						<div id="mail-field">
-							<input type="email" placeholder="Email Address" />
+							<input type="text" placeholder="Email Address" />
                             <img id="icon" alt="Warn icon" src="./images/icon-error.svg" />
-							<button type="button">
+							<button type="submit">
 								<img alt="arrow" src="./images/icon-arrow.svg" />
 								<div id="button-filter"></div>
 							</button>
@@ -46,7 +47,7 @@
 			</section>
 			<aside>
 				<picture>
-					<source media="(max-width: 375px)" srcset="./images/hero-mobile.jpg" />
+					<source media="(max-width: 1115px)" srcset="./images/hero-mobile.jpg" />
 					<img alt="Hero photo" src="./images/hero-desktop.jpg" />
 				</picture>
 			</aside>

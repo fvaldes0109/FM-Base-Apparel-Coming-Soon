@@ -67,7 +67,7 @@ input {
 }
 
 #button-filter, button {
-    height: 52px;
+    height: 54px;
     width: 90px;
     border-radius: 25px;
     position: absolute;
@@ -85,9 +85,9 @@ button {
     background: -o-linear-gradient(top left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     background: -moz-linear-gradient(top left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     background: -webkit-linear-gradient(top left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    top: 30px;
+    top: 29px;
     right: 18px;
-    height: 52px;
+    height: 54px;
     box-shadow: rgba(200, 200, 200, 0.6) 5px 5px 10px 5px;
 }
  
