@@ -105,8 +105,70 @@ button:active #button-filter {
     visibility: hidden;
 }
 
+#photo-mobile {
+    display: none;
+}
+
 @media(min-width: 1300px) {
     input {
         width: 80%;
+    }
+}
+
+@media(max-width: 700px) {
+    main {
+        display: block;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    #logo {
+        margin: 40px;
+    }
+
+    #photo-desktop {
+        display: none;
+    }
+
+    #photo-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        width: 270px;
+        margin: 80px auto 0;
+    }
+
+    p#desc {
+        text-align: center;
+        margin: 20px 10%;
+    }
+
+    input {
+        margin: 30px 10% 10px;
+        width: 70%;
+        padding: 5px 5%;
+    }
+
+    button {
+        right: 30px;
+    }
+
+    #icon {
+        right: 130px;
+    }
+
+    #invalid-text {
+        margin: 0px 10% 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    input {
+        width: 65%;
     }
 }
